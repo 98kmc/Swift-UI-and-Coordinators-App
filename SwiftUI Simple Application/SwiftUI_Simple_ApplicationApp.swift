@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftUI_Simple_ApplicationApp: App {
+    
+    let firstScreen = HomeScreenCoordinator()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            firstScreen.start()
         }
     }
 }
