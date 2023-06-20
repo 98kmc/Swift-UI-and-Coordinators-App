@@ -1,5 +1,5 @@
 //
-//  SwiftUI_Simple_ApplicationApp.swift
+//  SwiftUI_Simple_Application.swift
 //  SwiftUI Simple Application
 //
 //  Created by Miguel on 6/16/23.

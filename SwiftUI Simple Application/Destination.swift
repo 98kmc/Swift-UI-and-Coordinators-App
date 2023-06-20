@@ -1,5 +1,5 @@
 //
-//  Transitions.swift
+//  Destination.swift
 //  SwiftUI Simple Application
 //
 //  Created by Miguel on 6/19/23.
@@ -35,9 +35,3 @@ enum Destination: Hashable, Identifiable {
         hasher.combine(id)
     }
 }
-
-
-
-
-
-

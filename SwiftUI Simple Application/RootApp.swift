@@ -1,5 +1,5 @@
 //
-//  App.swift
+//  RootApp.swift
 //  SwiftUI Simple Application
 //
 //  Created by Miguel on 6/19/23.
