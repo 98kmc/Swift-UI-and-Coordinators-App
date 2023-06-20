@@ -8,8 +8,8 @@
 import SwiftUI
 
 protocol Coordinator {
+ 
+    associatedtype View
     
-    associatedtype Screen: View
-    
-    func start() -> Screen
+    func view() -> View
 }
