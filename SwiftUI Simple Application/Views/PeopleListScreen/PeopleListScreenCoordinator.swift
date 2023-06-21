@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-final class HomeScreenCoordinator<R: AppRouter>: ObservableObject, Coordinator, HomeScreenViewModelDelegate {
+final class PeopleListScreenCoordinator<R: AppRouter>: ObservableObject, Coordinator, PeopleListViewModelDelegate {
     
     private var router: R
     
     @ViewBuilder
-    func view() -> HomeScreenView {
+    func view() -> PeopleListScreenView {
         let useCases = PeopleUseCases()
-        let viewModel = HomeScreenViewModel(coordinator: self, useCases: useCases)
-        HomeScreenView(viewModel: viewModel)
+        let viewModel = PeopleListViewModel(coordinator: self, useCases: useCases)
+        PeopleListScreenView(viewModel: viewModel)
     }
     
     init(router: R) {
@@ -31,11 +31,11 @@ final class HomeScreenCoordinator<R: AppRouter>: ObservableObject, Coordinator, 
 struct HomeScreenCoordinatorView<R: AppRouter>: View {
     
     private var router: R
-    private var coordinator: HomeScreenCoordinator<R>
+    private var coordinator: PeopleListScreenCoordinator<R>
     
     init(router: R) {
         self.router = router
-        coordinator = HomeScreenCoordinator(router: router)
+        coordinator = PeopleListScreenCoordinator(router: router)
     }
     
     var body: some View {
