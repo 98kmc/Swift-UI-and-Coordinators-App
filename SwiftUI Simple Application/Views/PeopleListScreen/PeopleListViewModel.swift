@@ -26,7 +26,8 @@ final class PeopleListViewModel: ObservableObject {
     
     @Published var peopleList: [People] = []
     @Published var state: PeopleListViewModelState!
-    
+    @Published var  shouldShowFetchingMorePeopleSpinner = false
+ 
     init(coordinator: PeopleListViewModelDelegate, useCases: PeopleUseCases) {
         self.coordinator = coordinator
         peopleUseCases = useCases
@@ -42,10 +43,13 @@ final class PeopleListViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.peopleList = self.peopleList + fetchedPeople
                     self.state = .ready
+                    self.shouldShowFetchingMorePeopleSpinner = false
                 }
             } catch {
-                state = .error
-                print(error)
+                DispatchQueue.main.async {
+                    self.state = .error
+                    print(error)
+                }
             }
         }
     }
@@ -61,6 +65,15 @@ final class PeopleListViewModel: ObservableObject {
             currentPage += 1
             getPeople(page: currentPage)
         }
+    }
+    
+    func showFetchingMorePeopleSpinnerIfNeeded(_ item: People?) {
+        guard let lastItemName = peopleList.last?.name,
+              let lastItem = item,
+              lastItem.name == lastItemName else { return }
+        
+        shouldShowFetchingMorePeopleSpinner = true
+        
     }
     
     func navigateToDetail(character: People) {

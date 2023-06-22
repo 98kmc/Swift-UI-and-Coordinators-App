@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoadingSpinner: View {
-
+    
     var body: some View {
         VStack {
             ProgressView {
@@ -25,9 +25,9 @@ struct LoadingSpinner: View {
 struct PeopleList: View {
     
     @StateObject var viewModel: PeopleListViewModel
-   
+    
     var body: some View {
-
+        
         List {
             ForEach(viewModel.peopleList , id: \.name) { character in
                 HStack(alignment: .center) {
@@ -42,6 +42,7 @@ struct PeopleList: View {
                         .foregroundColor(.black)
                         .onAppear {
                             viewModel.fetchMorePeopleIfNeeeded(character)
+                            viewModel.showFetchingMorePeopleSpinnerIfNeeded(character)
                         }
                 }
                 .onTapGesture {
@@ -49,6 +50,7 @@ struct PeopleList: View {
                 }
             }
         }
+        .padding(EdgeInsets(top: 1, leading: 0, bottom: 16, trailing: 0))
     }
 }
 
@@ -62,8 +64,21 @@ struct PeopleListScreenView: View {
         }
         
         PeopleList(viewModel: viewModel)
-        .onAppear {
-            viewModel.fetchMorePeopleIfNeeeded(nil)
+            .onAppear {
+                viewModel.fetchMorePeopleIfNeeeded(nil)
+            }
+        
+        if viewModel.shouldShowFetchingMorePeopleSpinner {
+            VStack {
+                ProgressView {
+                    Text("Loading data...")
+                        .font(.title2)
+                        .foregroundColor(.yellow)
+                }
+                .progressViewStyle(CircularProgressViewStyle(tint: .yellow))
+                .frame(height: 40)
+            }
+            .frame(maxWidth: .infinity)
         }
     }
 }

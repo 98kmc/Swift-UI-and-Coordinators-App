@@ -8,14 +8,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3DC20493-93CE-4132-8747-A9B58C40D7A7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftUI Simple Application/Views/PeopleListScreen/PeopleListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "fetchMorePeopleIfNeeeded(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -24,7 +24,39 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "38B48CBC-DDA1-450D-A594-7CA99041EAD4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUI Simple Application/Views/PeopleListScreen/PeopleListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "getPeople(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3BA5B41-6532-498E-95B6-AF5110D85D16"
             shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUI Simple Application/Views/PeopleListScreen/PeopleListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getPeople(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9600B90-867A-4946-A658-F263C5456BFA"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftUI Simple Application/Views/PeopleListScreen/PeopleListViewModel.swift"
@@ -34,6 +66,54 @@
             endingLineNumber = "44"
             landmarkName = "getPeople(page:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E9B7BCB-7B5F-40D0-9875-83192A132110"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUI Simple Application/Views/PeopleListScreen/PeopleListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "showFetchingMorePeopleSpinnerIfNeeded(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1E9B7BCB-7B5F-40D0-9875-83192A132110 - 7e7f1439611895eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI_Simple_Application.PeopleListViewModel.showFetchingMorePeopleSpinnerIfNeeded(Swift.Optional&lt;SwiftUI_Simple_Application.People&gt;) -&gt; ()"
+                  moduleName = "SwiftUI Simple Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user-t/Developer/SwiftUI%20Simple%20Application/SwiftUI%20Simple%20Application/Views/PeopleListScreen/PeopleListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "578">
+               </Location>
+               <Location
+                  uuid = "1E9B7BCB-7B5F-40D0-9875-83192A132110 - 7e7f1439611895eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUI_Simple_Application.PeopleListViewModel.showFetchingMorePeopleSpinnerIfNeeded(Swift.Optional&lt;SwiftUI_Simple_Application.People&gt;) -&gt; ()"
+                  moduleName = "SwiftUI Simple Application"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user-t/Developer/SwiftUI%20Simple%20Application/SwiftUI%20Simple%20Application/Views/PeopleListScreen/PeopleListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "769">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
