@@ -19,9 +19,9 @@
 		194C3BEA2A3CB8FD00E27448 /* SwiftUI_Simple_ApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BE92A3CB8FD00E27448 /* SwiftUI_Simple_ApplicationUITests.swift */; };
 		194C3BEC2A3CB8FD00E27448 /* SwiftUI_Simple_ApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BEB2A3CB8FD00E27448 /* SwiftUI_Simple_ApplicationUITestsLaunchTests.swift */; };
 		194C3BF92A3CBC6700E27448 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BF82A3CBC6700E27448 /* Coordinator.swift */; };
-		194C3BFC2A3CBC9200E27448 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BFB2A3CBC9200E27448 /* HomeScreenView.swift */; };
-		194C3BFE2A3CBCBD00E27448 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BFD2A3CBCBD00E27448 /* HomeScreenViewModel.swift */; };
-		194C3C002A3CBCEE00E27448 /* HomeScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BFF2A3CBCEE00E27448 /* HomeScreenCoordinator.swift */; };
+		194C3BFC2A3CBC9200E27448 /* PeopleListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BFB2A3CBC9200E27448 /* PeopleListScreenView.swift */; };
+		194C3BFE2A3CBCBD00E27448 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BFD2A3CBCBD00E27448 /* PeopleListViewModel.swift */; };
+		194C3C002A3CBCEE00E27448 /* PeopleListScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BFF2A3CBCEE00E27448 /* PeopleListScreenCoordinator.swift */; };
 		194C3C052A3CCDBD00E27448 /* PeopleDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3C042A3CCDBD00E27448 /* PeopleDTO.swift */; };
 		194C3C072A3CCF7500E27448 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3C062A3CCF7500E27448 /* APIManager.swift */; };
 		194C3C0A2A3CD05C00E27448 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3C092A3CD05C00E27448 /* People.swift */; };
@@ -61,9 +61,9 @@
 		194C3BE92A3CB8FD00E27448 /* SwiftUI_Simple_ApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Simple_ApplicationUITests.swift; sourceTree = "<group>"; };
 		194C3BEB2A3CB8FD00E27448 /* SwiftUI_Simple_ApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Simple_ApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		194C3BF82A3CBC6700E27448 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		194C3BFB2A3CBC9200E27448 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
-		194C3BFD2A3CBCBD00E27448 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
-		194C3BFF2A3CBCEE00E27448 /* HomeScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenCoordinator.swift; sourceTree = "<group>"; };
+		194C3BFB2A3CBC9200E27448 /* PeopleListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListScreenView.swift; sourceTree = "<group>"; };
+		194C3BFD2A3CBCBD00E27448 /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
+		194C3BFF2A3CBCEE00E27448 /* PeopleListScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListScreenCoordinator.swift; sourceTree = "<group>"; };
 		194C3C042A3CCDBD00E27448 /* PeopleDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDTO.swift; sourceTree = "<group>"; };
 		194C3C062A3CCF7500E27448 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		194C3C092A3CD05C00E27448 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
@@ -114,9 +114,9 @@
 		19112C2F2A40935F00CF9C10 /* PeopleListScreen */ = {
 			isa = PBXGroup;
 			children = (
-				194C3BFF2A3CBCEE00E27448 /* HomeScreenCoordinator.swift */,
-				194C3BFD2A3CBCBD00E27448 /* HomeScreenViewModel.swift */,
-				194C3BFB2A3CBC9200E27448 /* HomeScreenView.swift */,
+				194C3BFF2A3CBCEE00E27448 /* PeopleListScreenCoordinator.swift */,
+				194C3BFD2A3CBCBD00E27448 /* PeopleListViewModel.swift */,
+				194C3BFB2A3CBC9200E27448 /* PeopleListScreenView.swift */,
 			);
 			path = PeopleListScreen;
 			sourceTree = "<group>";
@@ -380,12 +380,12 @@
 				19112C2E2A40921800CF9C10 /* DetailScreenCoordinator.swift in Sources */,
 				194C3C072A3CCF7500E27448 /* APIManager.swift in Sources */,
 				194C3C0A2A3CD05C00E27448 /* People.swift in Sources */,
-				194C3C002A3CBCEE00E27448 /* HomeScreenCoordinator.swift in Sources */,
+				194C3C002A3CBCEE00E27448 /* PeopleListScreenCoordinator.swift in Sources */,
 				19112C282A3CFDC600CF9C10 /* PeopleUseCases.swift in Sources */,
-				194C3BFC2A3CBC9200E27448 /* HomeScreenView.swift in Sources */,
+				194C3BFC2A3CBC9200E27448 /* PeopleListScreenView.swift in Sources */,
 				19112C342A40C11900CF9C10 /* Router.swift in Sources */,
 				19112C2B2A408FE000CF9C10 /* Destination.swift in Sources */,
-				194C3BFE2A3CBCBD00E27448 /* HomeScreenViewModel.swift in Sources */,
+				194C3BFE2A3CBCBD00E27448 /* PeopleListViewModel.swift in Sources */,
 				194C3C0D2A3CD4E800E27448 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

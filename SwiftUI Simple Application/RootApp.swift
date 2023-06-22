@@ -47,3 +47,30 @@ extension RootApp: AppRouter {
         path.removeLast(path.count)
     }
 }
+
+struct RootApp_View: View {
+    
+    @StateObject private var router = RootApp()
+    
+    var body: some View {
+        
+        NavigationStack(path: $router.path) {
+
+                router.rootDestination.coordinatorFor(router: router)
+                .navigationDestination(for: Destination.self) { transition in
+                        transition.coordinatorFor(router: router)
+                    }
+                    .sheet(item: $router.sheet, content: { transition in
+                        transition.coordinatorFor(router: router)
+                    })
+                    .navigationTitle("Starwars Characters")
+                    .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+}
+
+struct MyPreviewProvider_Previews: PreviewProvider {
+    static var previews: some View {
+        RootApp_View()
+    }
+}
