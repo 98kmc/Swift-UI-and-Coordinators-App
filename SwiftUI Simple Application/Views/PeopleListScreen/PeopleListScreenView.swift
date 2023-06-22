@@ -65,7 +65,6 @@ struct PeopleListScreenView: View {
         .onAppear {
             viewModel.fetchMorePeopleIfNeeeded(nil)
         }
-        .padding(.bottom)
     }
 }
 

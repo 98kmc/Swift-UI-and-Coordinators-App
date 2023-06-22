@@ -64,7 +64,7 @@ struct RootApp_View: View {
                         transition.coordinatorFor(router: router)
                     })
                     .navigationTitle("Starwars Characters")
-                    .navigationBarTitleDisplayMode(.automatic)
+                    .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
