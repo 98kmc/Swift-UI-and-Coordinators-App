@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		19112C282A3CFDC600CF9C10 /* PeopleUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19112C272A3CFDC600CF9C10 /* PeopleUseCases.swift */; };
 		19112C2B2A408FE000CF9C10 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19112C2A2A408FE000CF9C10 /* Destination.swift */; };
-		19112C2E2A40921800CF9C10 /* DetailScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19112C2D2A40921800CF9C10 /* DetailScreenCoordinator.swift */; };
+		19112C2E2A40921800CF9C10 /* PeopleDetailScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19112C2D2A40921800CF9C10 /* PeopleDetailScreenCoordinator.swift */; };
 		19112C312A40C05E00CF9C10 /* RootApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19112C302A40C05E00CF9C10 /* RootApp.swift */; };
 		19112C342A40C11900CF9C10 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19112C332A40C11900CF9C10 /* Router.swift */; };
 		194C3BCF2A3CB8FB00E27448 /* SwiftUI_Simple_Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BCE2A3CB8FB00E27448 /* SwiftUI_Simple_Application.swift */; };
@@ -26,6 +26,10 @@
 		194C3C072A3CCF7500E27448 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3C062A3CCF7500E27448 /* APIManager.swift */; };
 		194C3C0A2A3CD05C00E27448 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3C092A3CD05C00E27448 /* People.swift */; };
 		194C3C0D2A3CD4E800E27448 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194C3C0C2A3CD4E800E27448 /* Constants.swift */; };
+		197D68B42A44DACA00C60F16 /* PeopleDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68B32A44DACA00C60F16 /* PeopleDetailScreen.swift */; };
+		197D68B62A44DCDE00C60F16 /* PeopleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197D68B52A44DCDE00C60F16 /* PeopleDetailViewModel.swift */; };
+		197D693B2A45DDE300C60F16 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BD22A3CB8FC00E27448 /* Assets.xcassets */; };
+		197D693C2A45DDE300C60F16 /* Preview Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 194C3BD52A3CB8FC00E27448 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +52,7 @@
 /* Begin PBXFileReference section */
 		19112C272A3CFDC600CF9C10 /* PeopleUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleUseCases.swift; sourceTree = "<group>"; };
 		19112C2A2A408FE000CF9C10 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
-		19112C2D2A40921800CF9C10 /* DetailScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenCoordinator.swift; sourceTree = "<group>"; };
+		19112C2D2A40921800CF9C10 /* PeopleDetailScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailScreenCoordinator.swift; sourceTree = "<group>"; };
 		19112C302A40C05E00CF9C10 /* RootApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootApp.swift; sourceTree = "<group>"; };
 		19112C332A40C11900CF9C10 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		194C3BCB2A3CB8FB00E27448 /* SwiftUI Simple Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Simple Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +72,8 @@
 		194C3C062A3CCF7500E27448 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		194C3C092A3CD05C00E27448 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		194C3C0C2A3CD4E800E27448 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		197D68B32A44DACA00C60F16 /* PeopleDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailScreen.swift; sourceTree = "<group>"; };
+		197D68B52A44DCDE00C60F16 /* PeopleDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +112,9 @@
 		19112C2C2A40920800CF9C10 /* DetailScreen */ = {
 			isa = PBXGroup;
 			children = (
-				19112C2D2A40921800CF9C10 /* DetailScreenCoordinator.swift */,
+				19112C2D2A40921800CF9C10 /* PeopleDetailScreenCoordinator.swift */,
+				197D68B52A44DCDE00C60F16 /* PeopleDetailViewModel.swift */,
+				197D68B32A44DACA00C60F16 /* PeopleDetailScreen.swift */,
 			);
 			path = DetailScreen;
 			sourceTree = "<group>";
@@ -373,15 +381,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				197D693B2A45DDE300C60F16 /* Assets.xcassets in Sources */,
+				197D693C2A45DDE300C60F16 /* Preview Assets.xcassets in Sources */,
 				19112C312A40C05E00CF9C10 /* RootApp.swift in Sources */,
 				194C3C052A3CCDBD00E27448 /* PeopleDTO.swift in Sources */,
 				194C3BCF2A3CB8FB00E27448 /* SwiftUI_Simple_Application.swift in Sources */,
 				194C3BF92A3CBC6700E27448 /* Coordinator.swift in Sources */,
-				19112C2E2A40921800CF9C10 /* DetailScreenCoordinator.swift in Sources */,
+				19112C2E2A40921800CF9C10 /* PeopleDetailScreenCoordinator.swift in Sources */,
 				194C3C072A3CCF7500E27448 /* APIManager.swift in Sources */,
 				194C3C0A2A3CD05C00E27448 /* People.swift in Sources */,
+				197D68B42A44DACA00C60F16 /* PeopleDetailScreen.swift in Sources */,
 				194C3C002A3CBCEE00E27448 /* PeopleListScreenCoordinator.swift in Sources */,
 				19112C282A3CFDC600CF9C10 /* PeopleUseCases.swift in Sources */,
+				197D68B62A44DCDE00C60F16 /* PeopleDetailViewModel.swift in Sources */,
 				194C3BFC2A3CBC9200E27448 /* PeopleListScreenView.swift in Sources */,
 				19112C342A40C11900CF9C10 /* Router.swift in Sources */,
 				19112C2B2A408FE000CF9C10 /* Destination.swift in Sources */,
