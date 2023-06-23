@@ -11,19 +11,20 @@ enum Destination: Hashable, Identifiable {
     
     case homeScreen
     case detailScreen(character: People)
-
+    
     var id: String {
         String(describing: self)
     }
-
+    
     @ViewBuilder
     func coordinatorFor<R: AppRouter>(router: R) -> some View {
+        
         switch self {
         case .homeScreen:
-            HomeScreenCoordinatorView(router: router)
-
-        case .detailScreen:
-            DetailScreenCoordinatorView(router: router)
+            PeopleListScreenCoordinatorView(router: router)
+            
+        case .detailScreen(let character):
+            PeopleDetailScreenCoordinatorView(router: router, character: character)
         }
     }
     

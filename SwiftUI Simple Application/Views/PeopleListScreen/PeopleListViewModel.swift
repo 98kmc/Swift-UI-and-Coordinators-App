@@ -27,13 +27,21 @@ final class PeopleListViewModel: ObservableObject {
     @Published var peopleList: [People] = []
     @Published var state: PeopleListViewModelState!
     @Published var  shouldShowFetchingMorePeopleSpinner = false
- 
+    
     init(coordinator: PeopleListViewModelDelegate, useCases: PeopleUseCases) {
         self.coordinator = coordinator
         peopleUseCases = useCases
     }
     
     private func getPeople(page: Int) {
+        
+        guard let lastPage = Int(Constants.LAST_PAGE),
+              page <= lastPage
+        else {
+            state = .ready
+            return
+        }
+        
         state = .loading
         
         Task {
@@ -70,7 +78,9 @@ final class PeopleListViewModel: ObservableObject {
     func showFetchingMorePeopleSpinnerIfNeeded(_ item: People?) {
         guard let lastItemName = peopleList.last?.name,
               let lastItem = item,
-              lastItem.name == lastItemName else { return }
+              let lastPage = Int(Constants.LAST_PAGE),
+              lastItem.name == lastItemName,
+              currentPage < lastPage else { return }
         
         shouldShowFetchingMorePeopleSpinner = true
         

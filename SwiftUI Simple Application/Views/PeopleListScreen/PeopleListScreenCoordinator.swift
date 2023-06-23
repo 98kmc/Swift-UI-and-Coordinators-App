@@ -28,7 +28,7 @@ final class PeopleListScreenCoordinator<R: AppRouter>: ObservableObject, Coordin
 }
 
 
-struct HomeScreenCoordinatorView<R: AppRouter>: View {
+struct PeopleListScreenCoordinatorView<R: AppRouter>: View {
     
     private var router: R
     private var coordinator: PeopleListScreenCoordinator<R>

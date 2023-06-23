@@ -55,16 +55,16 @@ struct RootApp_View: View {
     var body: some View {
         
         NavigationStack(path: $router.path) {
-
-                router.rootDestination.coordinatorFor(router: router)
+            
+            router.rootDestination.coordinatorFor(router: router)
                 .navigationDestination(for: Destination.self) { transition in
-                        transition.coordinatorFor(router: router)
-                    }
-                    .sheet(item: $router.sheet, content: { transition in
-                        transition.coordinatorFor(router: router)
-                    })
-                    .navigationTitle("Starwars Characters")
-                    .navigationBarTitleDisplayMode(.inline)
+                    transition.coordinatorFor(router: router)
+                }
+                .sheet(item: $router.sheet, content: { transition in
+                    transition.coordinatorFor(router: router)
+                })
+                .navigationTitle("Starwars Characters")
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
