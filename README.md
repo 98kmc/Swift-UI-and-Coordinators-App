@@ -1,4 +1,4 @@
-# Star Wars API Android App
+# Star Wars API iOS App
 
 -
 |   Character List Screen:  |  
@@ -32,9 +32,11 @@ Comprehensive documentation available at the [Star Wars API](https://swapi.dev/)
 
 ### Getting Started
 
-1. Clone the repository: git clone https://github.com/98kmc/Swift-UI-and-Coordinators-App.git
-2. Open the Xcode project.
-3. Build and run the app on the iOS Simulator or a physical device.
+1. Clone the repository: git clone https://github.com/98kmc/Swift-UI-and-Coordinators-App.git.
+2. Navigate to the project directory: cd Swift-UI-and-Coordinators-App.
+3. Ensure you have Xcode installed. If not, download and install it from the App Store or the Apple Developer website.
+4. Open the Xcode project on XCode.
+Build and run the app on the iOS Simulator or a physical iOS device using Xcode.
 
 ### Contact
 If you have any questions please feel free to reach out to me. You can connect with me on [Linkedin](https://www.linkedin.com/in/cmiguel98/). I would be delighted to connect with you.
